@@ -25,7 +25,7 @@ export default function BackgroundGradientDemo() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {featuredCourses.map((course: Course) => (
-                        <BackgroundGradient>
+                        <BackgroundGradient key={course.id}>
                     <div key={course.id} className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
                             <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                                 {course.title}
